@@ -268,4 +268,12 @@ div .radial-progress::before {
     height: 40px;
     min-height: inherit;
   }
+ div .collapse-title, :where(.collapse > input[type="checkbox"]), :where(.collapse > input[type="radio"]) {
+    padding-left: 0;
+    padding-inline-end: 28px;
+  }
+  .collapse-content {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
 }
