@@ -238,7 +238,7 @@ div .radial-progress::before {
     width: 280px;
     padding: 20px;
     text-align: left;
-    background: #ccc;
+    background: #f6f6f6;
     z-index: 9;
     transition: all linear 0.3s;
   }
