@@ -1,7 +1,7 @@
 /*-----------------------------------------------------------------------------------
 
-    Template Name: Happy Travel HTML5 Template
-    Description: Happy Travel HTML5 Template
+    Template Name: Hockey HTML5 Template
+    Description: Hockey HTML5 Template
     Author: Hasibul
     Version: 1.0
 
@@ -12,14 +12,6 @@
 
     01. Theme default
     02. Hero
-    03. Deals
-    04. Welcome
-    05. Event
-    06. Comming Soon
-    07. Holidays
-    08. Portfolio
-    09. Newsletter
-    10. Footer
 
 -----------------------------------------------------------------------------------*/
 /*----------------------------------------*/
@@ -143,64 +135,7 @@ select {
 }
 
 /*----------------------------------------*/
-/*  02. header
-/*----------------------------------------*/
-/* .header-wrap {
-  display: flex;
-  gap: 20px;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.logo {
-  display: flex;
-  gap: 5px;
-  align-items: center;
-}
-
-.logo h3 {
-  font-size: 36px;
-  color: #000;
-  font-weight: 800;
-}
-
-.logo h3 span {
-  font-size: 36px;
-  color: #FF5400;
-  font-weight: 800;
-}
-
-.header-wrap nav {
-  text-align: right;
-}
-
-.header-wrap nav ul {
-  display: inline-flex;
-  justify-content: flex-end;
-}
-
-.header-wrap nav ul li {
-  margin-right: 40px;
-  display: inline-block;
-}
-.header-wrap nav ul li:last-child {
-  margin-right: 0px;
-}
-.header-wrap nav ul li a {
-  font-family: Mulish;
-  font-size: 18px;
-  font-weight: 400;
-  color: #424247;
-}
-
-.header-wrap nav ul li a.active,
-.header-wrap nav ul li a:hover {
-  color: #FF5400;
-}
- */
-
-/*----------------------------------------*/
-/*  03. hero
+/*   Styles
 /*----------------------------------------*/
 .container {
   max-width: 1200px;
@@ -250,4 +185,87 @@ select {
   color: #fff;
   font-weight: 700;
   height: 56px;
+}
+div .radial-progress::before {
+	inset: 0px;
+	background: radial-gradient(farthest-side,currentColor 98%,#0000) top/var(--thickness) var(--thickness) no-repeat,conic-gradient(currentColor calc(var(--value) * 1%),#E7E7E8 0);
+	-webkit-mask: radial-gradient(farthest-side,#0000 calc(99% - var(--thickness)),#000 calc(100% - var(--thickness)));
+	mask: radial-gradient(farthest-side,#0000 calc(99% - var(--thickness)),#000 calc(100% - var(--thickness)));
+}
+
+
+@media only screen and (max-width: 767px) {
+  br {
+    display: none;
+  }
+
+  p {
+    font-size: 14px !important;
+    font-weight: 400 !important;
+    line-height: 24px !important;
+  }
+
+  .sidebar-icon {
+    display: inline-block;
+  }
+  .sidebar-icon button {
+    height: 40px;
+    width: 40px;
+    border: none;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #FF5400;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+}
+  .header-wrap nav ul {
+    text-align: left;
+    flex-direction: column;
+    gap: 15px;
+    color: #131318;
+    justify-content: flex-start;
+  }
+
+  .header-wrap nav {
+    position: fixed;
+    top: 0px;
+    left: -280px;
+    min-height: 100vh;
+    overflow-y: auto;
+    width: 280px;
+    padding: 20px;
+    text-align: left;
+    background: #ccc;
+    z-index: 9;
+    transition: all linear 0.3s;
+  }
+  .header-wrap nav.active {
+    left: 0px;
+  }
+  .header-wrap nav ul li {
+    margin: 0px;
+  }
+  .close-btn {
+    height: 40px;
+    width: 40px;
+    border: none;
+    line-height: 40px;
+    font-size: 20px;
+    color: #fff;
+    background: #131318;
+    text-align: center;
+    border-radius: 8px;
+    display: inline-block;
+    cursor: pointer;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+  div .btn {
+    height: 40px;
+    min-height: inherit;
+  }
 }
